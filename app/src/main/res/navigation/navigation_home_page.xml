@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_home_page"
+    app:startDestination="@id/listTeacherFragment">
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.final_project_english_learn_app.chat.ChatFragment"
+        android:label="ChatFragment" />
+    <fragment
+        android:id="@+id/listTeacherFragment"
+        android:name="com.example.final_project_english_learn_app.listTeacher.ListTeacherFragment"
+        android:label="fragment_list_teacher_list"
+        tools:layout="@layout/fragment_list_teacher_list" />
+    <fragment
+        android:id="@+id/calenderFragment"
+        android:name="calender.CalenderFragment"
+        android:label="CalenderFragment" />
+</navigation>

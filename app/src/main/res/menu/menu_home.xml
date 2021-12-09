@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/teacher_list_icon"
+
+        android:icon="@drawable/ic_baseline_person_search_24"
+        android:iconTint="#1A237E"
+        android:title="teatchers" />
+    <item
+        android:id="@+id/chat_icon"
+
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:iconTint="#1A237E"
+        android:title="chat" />
+    <item
+        android:id="@+id/resevation_icon"
+        android:icon="@drawable/ic_baseline_calendar_month_24"
+        android:iconTint="#1A237E"
+        android:title="my resevaition" />
+    <item
+
+        android:icon="@drawable/ic_baseline_video_library_24"
+        android:iconTint="#1A237E"
+        android:title="lessons " />
+</menu>

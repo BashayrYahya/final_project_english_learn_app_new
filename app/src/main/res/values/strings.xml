@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">final_project_english_learn_app</string>
+    <string name="hello_blank_fragment">chat Frag</string>
+    <string name="title_activity_main_activity2_home">MainActivity2Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="teacher">teacher</string>
+    <string name="student">Student</string>
+    <string name="already_have_a_account_click_here">Already have a Account click ( here)</string>
+    <string name="register">REGISTER</string>
+    <string name="password_hint">password</string>
+    <string name="register_btn">Register</string>
+    <string name="phone_number_hint">Phone No</string>
+    <string name="email_hint">Email</string>
+    <string name="name_hint">Name</string>
+</resources>
