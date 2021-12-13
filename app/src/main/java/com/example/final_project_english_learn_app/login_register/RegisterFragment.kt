@@ -30,7 +30,7 @@ class RegisterFragment : Fragment() {
      lateinit var fireAuth : FirebaseAuth
      lateinit var fireStore  : FirebaseFirestore
    lateinit var  isTeacher: RadioButton
-   lateinit var  isSudent: RadioButton
+   lateinit var  isStudent: RadioButton
 
 
 
@@ -59,13 +59,18 @@ class RegisterFragment : Fragment() {
         registerBtn = view.findViewById(R.id.registerBtn)
         goToLogin = view.findViewById(R.id.logintext)
         isTeacher= view.findViewById(R.id.isTeacher)
-        isSudent= view.findViewById(R.id.isStudent)
+        isStudent= view.findViewById(R.id.isStudent)
+
 
 
 
         registerBtn.setOnClickListener {
             checkField(fullName,email,password,phone)
 
+            if(isTeacher.isClickable) {
+                isStudent.display }else if (isStudent.isChecked){
+                isTeacher.display
+            }
 
 
             if (valid) { // new register
@@ -93,7 +98,7 @@ class RegisterFragment : Fragment() {
                                 userInfo["isAdmin"] = "1"
 
                             }
-                            if (isSudent.isChecked) {
+                            if (isStudent.isChecked) {
                                 userInfo["isAdmin"] = "0"
                                 val intent = Intent(context, MainActivity2::class.java)
                                 startActivity(intent)
